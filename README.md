@@ -75,7 +75,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ```
   npm run build
 ```
+### 项目访问
+```
+  http://localhost:3000/index
+```
 ### git地址
 ```
  https://github.com/luoxiapeng/react-multi-page
 ```
+
