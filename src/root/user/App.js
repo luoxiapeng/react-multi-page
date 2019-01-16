@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className={style.App}>
         <header className="App-header">
-        多页面应用user
+        多页面应用user页面
         </header>
           <InputItem
               clear
