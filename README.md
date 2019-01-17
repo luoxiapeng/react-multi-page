@@ -79,6 +79,25 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ```
   http://localhost:3000/index
 ```
+### 项目目录说明
+```
+   rect-multi-page
+         
+         |--config
+         |--node_modules
+         |--public
+         |--scripts   
+         |--src
+             |--component      公共组件存放目录
+             |--root           多入口目录
+                 |--admin      入口一
+                 |--index      入口二
+                 |--user       入口三
+             |--static         静态文件存放目录
+                 |--reset      初始化样式        
+         
+         
+```
 ### git地址
 ```
  https://github.com/luoxiapeng/react-multi-page
