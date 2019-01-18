@@ -147,7 +147,7 @@ module.exports = function(webpackEnv) {
         }
         let plugin = []
         arrayString.map(function (item) {
-            console.log( path.resolve(paths.appRoot,item,'index.html'));
+            // console.log( path.resolve(paths.appRoot,item,'index.html'));
             plugin.push(
                 new HtmlWebpackPlugin(
                     Object.assign(

@@ -5,7 +5,7 @@ const Router = (props)=>{
     return(
         <BrowserRouter>
             <div>
-                <Route path='index' exact component={Home}></Route>
+                <Route path='/index' exact component={Home}></Route>
             </div>
         </BrowserRouter>
 
