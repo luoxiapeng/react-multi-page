@@ -200,9 +200,9 @@ module.exports = function(webpackEnv) {
             pathinfo: isEnvDevelopment,
             // There will be one main bundle, and one file per asynchronous chunk.
             // In development, it does not produce real files.
-            filename: 'static/js/[name].bundle.[hash].js',
+            filename: 'statics/js/[name].bundle.[hash].js',
             // There are also additional JS chunk files if you use code splitting.
-            chunkFilename: 'static/js/[name].chunk.[hash].js',
+            chunkFilename: 'statics/js/[name].chunk.[hash].js',
             // We inferred the "public path" (such as / or /my-project) from homepage.
             // We use "/" in development.
             publicPath: publicPath,
@@ -367,7 +367,7 @@ module.exports = function(webpackEnv) {
                             loader: require.resolve('url-loader'),
                             options: {
                                 limit: 10000,
-                                name: 'static/media/[name].[hash:8].[ext]',
+                                name: 'statics/media/[name].[hash:8].[ext]',
                             },
                         },
                         // Process application JS with Babel.
@@ -622,7 +622,7 @@ module.exports = function(webpackEnv) {
                             // by webpacks internal loaders.
                             exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
                             options: {
-                                name: 'static/media/[name].[hash:8].[ext]',
+                                name: 'statics/media/[name].[hash:8].[ext]',
                             },
                         },
                         // ** STOP ** Are you adding a new loader?
@@ -729,8 +729,8 @@ module.exports = function(webpackEnv) {
             new MiniCssExtractPlugin({
                 // Options similar to the same options in webpackOptions.output
                 // both options are optional
-                filename: 'static/css/[name].[contenthash:8].css',
-                chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
+                filename: 'statics/css/[name].[contenthash:8].css',
+                chunkFilename: 'statics/css/[name].[contenthash:8].chunk.css',
             }),
             // Generate a manifest file which contains a mapping of all asset filenames
             // to their corresponding output file so that tools can pick it up without
