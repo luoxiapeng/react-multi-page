@@ -67,12 +67,11 @@ const resolveModule = (resolveFn, filePath) => {
 };
 
 const appArr = []
-
 var moduleSrcArray = glob.sync('src/root/*')
 moduleSrcArray.map(item=>{
   if(appArr.length ===moduleSrcArray.length) return
   appArr.push(item.split('/')[2])
-})
+});
 
 
 // config after eject: we're in ./config/

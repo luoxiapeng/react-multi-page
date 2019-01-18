@@ -147,6 +147,7 @@ module.exports = function(webpackEnv) {
         }
         let plugin = []
         arrayString.map(function (item) {
+            console.log( path.resolve(paths.appRoot,item,'index.html'));
             plugin.push(
                 new HtmlWebpackPlugin(
                     Object.assign(
@@ -154,7 +155,7 @@ module.exports = function(webpackEnv) {
                         {
                             inject: true,
                             chunks: [item],
-                            template: paths.appHtml,
+                            template: path.resolve(paths.appRoot,item,'index.html'),
                             filename: item + "/index.html"
                         },
                         isEnvProduction
