@@ -108,6 +108,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
                      |--index.htm                           挂载模板
                      |--index.js                            全局入口
                  |--index                                   入口二
+                     |--common                              公共组件
+                     |--pages                               页面
+                     |--router                              路由模块
+                     |--store                               数据层 
+                          |--index.js                       连接子组件以及页面的数据层
+                          |--reducer.js                     处理页面数据层
                      |--App.css                             组件样式
                      |--App.js                              组件入口
                      |--index.htm                           挂载模板
