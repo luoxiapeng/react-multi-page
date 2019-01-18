@@ -89,6 +89,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
          |--scripts             
          |--src
              |--component                                   公共组件存放目录
+                 |--header                                  项目公共头部组件
              |--root                                        多入口目录
                  |--admin                                   入口一
                      |--comomon                             入口一公共组件
