@@ -12,16 +12,3 @@ const Router = (props)=>{
    )
 }
 export default Router;
-
-// class Router extends Component{
-//     render(){
-//         return(
-//             <BrowserRouter>
-//                 <div>
-//                     <Route path='/' exact component={Home}></Route>
-//                 </div>
-//             </BrowserRouter>
-//         )
-//     }
-// }
-// export default Router;
