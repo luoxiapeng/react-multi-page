@@ -88,6 +88,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
          |--public
          |--scripts             
          |--src
+            setupProxt.js                                   服务器代理配置(解决开发跨域)
              |--component                                   公共组件存放目录
                  |--header                                  项目公共头部组件
              |--root                                        多入口目录
