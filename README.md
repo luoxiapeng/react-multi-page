@@ -88,25 +88,36 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
          |--public
          |--scripts             
          |--src
-             |--component                   公共组件存放目录
-             |--root                        多入口目录
-                 |--admin                   入口一
-                     |--App.css             组件样式
-                     |--App.js              组件入口
-                     |--index.htm           挂载模板
-                     |--index.js            全局入口
-                 |--index                   入口二
-                     |--App.css             组件样式
-                     |--App.js              组件入口
-                     |--index.htm           挂载模板
-                     |--index.js            全局入口
-                 |--user                    入口三
-                     |--App.module.css      局部组件样式（不会覆盖全局样式）
-                     |--App.js              组件入口
-                     |--index.htm           挂载模板
-                     |--index.js            全局入口
-             |--static                      静态文件存放目录
-                 |--reset                   初始化样式        
+             |--component                                   公共组件存放目录
+             |--root                                        多入口目录
+                 |--admin                                   入口一
+                     |--comomon                             入口一公共组件
+                          |--header                         头部组件
+                              |--store                      专属头部组件的数据层
+                                  |--ationCreators.js       页面actoin，以及请求存放点
+                                  |--constants.js           页面派发type类型，以及页面专属变量字段
+                                  |--index.js               header store的中心管理层，链接最外层的store
+                                  |--reducer.js             页面action数据修改
+                                  
+                     |--store
+                         |--index.js                        挂载到thunk中间件，连接每一个页面以及组件，挂在store中
+                         |--reducer.js                      处理页面      
+                     |--App.css                             组件样式
+                     |--App.js                              组件入口
+                     |--index.htm                           挂载模板
+                     |--index.js                            全局入口
+                 |--index                                   入口二
+                     |--App.css                             组件样式
+                     |--App.js                              组件入口
+                     |--index.htm                           挂载模板
+                     |--index.js                            全局入口
+                 |--user                                    入口三
+                     |--App.module.css                      局部组件样式（不会覆盖全局样式）
+                     |--App.js                              组件入口
+                     |--index.htm                           挂载模板
+                     |--index.js                            全局入口
+             |--static                                      静态文件存放目录
+                 |--reset                                   初始化样式        
          
          
 ```
