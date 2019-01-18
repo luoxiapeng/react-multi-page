@@ -11,7 +11,7 @@ class Home extends Component{
         )
     }
     handleClick(){
-        axios.get('api/admin').then(res=>{
+        axios.get('http://localhost:4000/admin').then(res=>{
             console.log(res);
         }).catch(err => console.log(err))
     }
