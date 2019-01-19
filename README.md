@@ -88,7 +88,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
          |--public
          |--scripts             
          |--src
-            setupProxt.js                                   服务器代理配置(解决开发跨域)
+             |--setupProxt.js                               服务器代理配置(解决开发跨域)
              |--component                                   公共组件存放目录
                  |--header                                  项目公共头部组件
              |--root                                        多入口目录
@@ -125,7 +125,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
                      |--index.htm                           挂载模板
                      |--index.js                            全局入口
              |--static                                      静态文件存放目录
-                 |--reset                                   初始化样式        
+                 |--reset                                   初始化样式 
+                 |--base                                    全局样式控制        
          
          
 ```

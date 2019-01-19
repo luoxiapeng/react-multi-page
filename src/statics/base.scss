@@ -1,0 +1,32 @@
+$pading:24px;
+$pl:24px;
+$pr:24px;
+$pt:24px;
+$pb:24px;
+
+$margin:24px;
+$ml:24px;
+$mr:24px;
+$mt:24px;
+$mb:24px;
+
+$color:blue;
+$bg:#f4f4f4;
+$btn_color:blue;
+
+$br:'8px';
+
+//蒙版颜色
+$filter:rgba(7,17,27,0.6);
+//加粗
+$weight:700;
+//不加粗
+$noweight:400;
+
+//二倍图三倍图转换
+@mixin bg-image($url) {
+  background-image: url($url + "@2x.png");
+  @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3){
+    background-image: url($url + "@3x.png")
+  }
+}
